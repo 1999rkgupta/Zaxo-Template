@@ -1,0 +1,920 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arvo", serif;
+  scroll-behavior: smooth;
+  /* transition: ease-in-out 0.7s; */
+}
+
+/* *,
+a,h1,h2,h3,p,div {
+  font-size: 100%;
+}
+
+@media (max-width:998px) {
+
+  *,  i,  p,  a,  i,  h2 {
+    font-size: 90%;
+  }
+
+  i,  h1,
+  h2,a {
+    font-size: 70%;
+  }
+}
+
+@media (max-width:768px) {
+  *,  i,
+  p,  a,  i,  h2 {
+    font-size: 90%;
+  }
+
+  i,  h1,  h2,  a {
+    font-size: 60%;
+  }
+} */
+
+/* NavBlock Start */
+#navBlock {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.mainBack {
+  /* opacity: 0.5; */
+  filter: brightness(27%);
+}
+
+.logo {
+  position: absolute;
+  top: 2%;
+  height: 160px;
+  width: 170px;
+  z-index: 6;
+}
+
+#navBlock>article {
+  width: 100%;
+  height: 12vh;
+  margin: 0 auto;
+  position: absolute;
+  top: 9%;
+  background-color: rgb(241, 240, 240);
+  z-index: 5;
+}
+
+#navBlock>article>.menuBlock {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  /* margin-left: 10%; */
+}
+
+#navBlock>article>.menuBlock>.leftMenuBlock {
+  width: 40%;
+  height: inherit;
+}
+
+#navBlock>article>.menuBlock>.leftMenuBlock>ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+}
+
+#navBlock>article>.menuBlock>.leftMenuBlock>ul>li>a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Arvo", serif;
+  color: black;
+  font-size: 0.9em;
+}
+
+#navBlock>article>.menuBlock>.rightMenuBlock {
+  width: 40%;
+  height: inherit;
+}
+
+#navBlock>article>.menuBlock>.rightMenuBlock>ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+}
+
+#navBlock>article>.menuBlock>.rightMenuBlock>ul>li>a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Arvo", serif;
+  color: black;
+  font-size: 0.9em;
+}
+
+#navBlock>.contentBlock {
+  position: absolute;
+  top: 48%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 62%;
+  height: 30%;
+  color: rgb(255, 255, 255);
+  justify-content: space-between;
+}
+
+.contentBlock>h1 {
+  font-size: 2.5em;
+  color: white;
+}
+
+#navBlock>.contentBlock>div>button {
+  padding: 2vh 3.5vh;
+  margin: 0 20px;
+  background-color: rgb(11, 11, 11);
+  border: none;
+  color: white;
+}
+
+#navBlock>.contentBlock>div>button:hover {
+  background-color: rgb(65, 176, 245);
+  border-radius: 3px;
+}
+
+/* navblock end */
+
+/* service block start */
+#serviceBlock {
+  height: 38vh;
+  width: 100%;
+}
+
+#serviceBlock>.cardBlock {
+  height: 36vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  box-shadow: 0px 2px rgba(128, 128, 128, 0.801);
+}
+
+#serviceBlock>.cardBlock>.card {
+  width: 22%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  height: 37vh;
+}
+
+#serviceBlock>.cardBlock>.card>i {
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  background-color: white;
+  outline-offset: 2px;
+  outline: 1px solid rgb(236, 236, 236);
+  position: absolute;
+  left: 35%;
+  top: -14%;
+}
+
+#serviceBlock>.cardBlock>.card>i:hover {
+  background-color: rgb(65, 176, 245);
+  color: white;
+  border-color: rgb(65, 176, 245);
+  outline-color: rgb(65, 176, 245);
+}
+
+#serviceBlock>.cardBlock>.card>h2 {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+#serviceBlock>.cardBlock>.card>p {
+  position: absolute;
+  top: 50%;
+}
+
+/* service block end */
+
+/*welcome Block Start  */
+#welcomeBlock {
+  height: 27vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#welcomeBlock>.headBlock>h1 {
+  font-size: 1.9em;
+  font-weight: bolder;
+}
+
+#welcomeBlock>.footBlock {
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+  height: 6vh;
+}
+
+#welcomeBlock>.footBlock>h3>i {
+  color: rgb(65, 176, 245);
+  font-size: 1.3em;
+}
+
+#welcomeBlock>.footBlock>h3:hover {
+  border-bottom: 2px solid rgb(65, 176, 245);
+  color: rgb(65, 176, 245);
+}
+
+/* Welcome Block End */
+
+/* Portfolio Block Start*/
+#portfolioBlock {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  color: white;
+}
+
+#portfolioBlock>img {
+  height: 67%;
+  width: 57%;
+  position: absolute;
+  left: 21%;
+  top: 0%;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+#portfolioBlock>.contentBlock {
+  height: 35vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(65, 176, 245);
+}
+
+#portfolioBlock>.contentBlock>div {
+  width: 80%;
+  height: 7vh;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#portfolioBlock>.contentBlock>div>h5 {
+  text-transform: uppercase;
+}
+
+/* Portfolio Block End */
+
+/* Gallery Block Start */
+#galleryBlock {
+  background-color: rgb(71, 73, 72);
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+#galleryBlock>figure {
+  height: 50vh;
+  width: 32.5vw;
+  overflow: hidden;
+}
+
+#galleryBlock>figure>img:hover {
+  cursor: zoom-in;
+  transition: ease-in-out 0.4s;
+  transform: scale(1.2);
+}
+
+#galleryBlock>figure>img {
+  height: 80%;
+  width: 100%;
+  transition: ease-in-out 0.4s;
+}
+
+#galleryBlock>figure:hover figcaption {
+  color: rgb(65, 176, 245);
+}
+
+#galleryBlock>figure>figcaption {
+  color: white;
+  z-index: 3;
+  position: relative;
+}
+
+/* Gallery Block End */
+
+/* About Us Block start */
+#aboutBlock {
+  height: 60vh;
+  width: 100%;
+}
+
+#aboutBlock>article {
+  height: 100%;
+  width: 82%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#aboutBlock>article>.imageBlock {
+  height: 100%;
+  width: 49%;
+}
+
+#aboutBlock>article>.imageBlock>img {
+  height: 100%;
+  width: 95%;
+}
+
+#aboutBlock>article>.textBlock {
+  height: 100%;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#aboutBlock>article>.textBlock>h1 {
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+
+/* About Us Block start */
+
+/* what we do block start */
+#workBlock {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(65, 176, 245);
+  color: white;
+}
+
+#workBlock>h1 {
+  font-size: 2em;
+  padding-bottom: 2px;
+  margin-bottom: 1%;
+  margin-top: 2%;
+  font-weight: bolder;
+  border-bottom: 2px solid white;
+}
+
+#workBlock>article {
+  width: 90%;
+  height: 83%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#workBlock>article>table {
+  height: 30%;
+  width: 32%;
+  display: flex;
+}
+
+.content_Block {
+  height: 40%;
+  width: 32%;
+}
+
+.container:hover {
+  background-color: rgb(71, 73, 72);
+  border-radius: 5px;
+}
+
+.container:hover .td1>p {
+  color: rgb(65, 176, 245);
+}
+
+.container {
+  height: 40%;
+  width: 30%;
+  padding: 1%;
+}
+
+.container:hover .icon {
+  color: rgb(71, 73, 72);
+}
+
+.container p {
+  margin-top: 3%;
+}
+
+.container i {
+  font-size: 25px;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  padding-top: 12px;
+  color: rgb(65, 176, 245);
+  outline-offset: 2px;
+  outline: 1.5px solid white;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* what we do block end */
+
+/* Ranking Block start */
+#rankingBlock {
+  height: 30vh;
+  width: 100%;
+  background-color: rgb(71, 73, 72);
+  border-bottom: 5.5px dotted white;
+}
+
+#rankingBlock>article {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#rankingBlock>article>.iconBlock {
+  display: flex;
+  flex-direction: row;
+}
+
+#rankingBlock>article>.iconBlock>i {
+  font-size: 2em;
+  padding-top: 9px;
+  margin-right: 12px;
+  color: rgb(65, 176, 245);
+}
+
+#rankingBlock>article>.iconBlock>h1 {
+  font-size: 2.5em;
+  line-height: 22px;
+  color: white;
+  font-weight: bolder;
+}
+
+/* Ranking Block start */
+
+/* Team Block Start */
+#teamBlock {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#teamBlock>article {
+  height: 70vh;
+  width: 87%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#teamBlock>h1 {
+  font-size: 2.5em;
+  font-weight: bolder;
+  border-bottom: 2px solid rgb(65, 176, 245);
+}
+
+#teamBlock>article>.card {
+  height: 90%;
+  width: 23%;
+  position: relative;
+}
+
+#teamBlock>article>.card>figure>img {
+  width: 100%;
+  height: 57vh;
+}
+
+#teamBlock>article>.card>h3 {
+  height: 20%;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.427);
+  padding-left: 5%;
+  padding-top: 5%;
+  color: rgb(65, 176, 245);
+  position: absolute;
+  bottom: 9.5%;
+}
+
+#teamBlock>article>.card:hover h3 {
+  background-color: rgba(64, 63, 63, 0.901);
+}
+
+#teamBlock>article>.card:hover figcaption {
+  color: rgb(66, 66, 66);
+}
+
+#teamBlock>article>.card:hover {
+  box-shadow: 1px 1px 3px 2px gray;
+}
+
+#teamBlock>article>.card>figure>figcaption {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(179, 177, 177);
+}
+
+/* Team Block End */
+
+/* skill Block start */
+#skillBlock {
+  height: 45vh;
+  width: 100%;
+  background-color: rgb(71, 73, 72);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white !important;
+}
+
+#skillBlock>h1 {
+  font-size: 2em;
+  color: white;
+  border-bottom: 2px solid rgb(65, 176, 245);
+
+  font-weight: bold;
+}
+
+#skillBlock>article {
+  height: 67%;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.skill_info {
+  position: absolute;
+  top: 65%;
+  display: block;
+  text-align: center;
+}
+
+.progress-circle {
+  font-size: 20px;
+  margin: 20px;
+  position: relative;
+  padding: 0;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  line-height: 5em;
+}
+
+.progress-circle:after {
+  border: none;
+  position: absolute;
+  top: 0.35em;
+  left: 0.35em;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  width: 4.3em;
+  height: 4.3em;
+  background-color: rgb(71, 73, 72);
+  content: " ";
+}
+
+.progress-circle span {
+  position: absolute;
+  line-height: 5em;
+  width: 5em;
+  font-weight: bolder;
+  text-align: center;
+  display: block;
+  color: white;
+  z-index: 2;
+}
+
+.left-half-clipper {
+  /* a round circle */
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  position: absolute;
+  /* needed for clipping */
+  clip: rect(0, 5em, 5em, 2.5em);
+  /* clips the whole left half*/
+}
+
+/* when p>50, don't clip left half*/
+.progress-circle.over50 .left-half-clipper {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.value-bar {
+  position: absolute;
+  /*needed for clipping*/
+  clip: rect(0, 2.5em, 5em, 0);
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: 0.45em solid rgb(65, 176, 245);
+  box-sizing: border-box;
+}
+
+/* Progress bar filling the whole right half for values above 50% */
+.progress-circle.over50 .first50-bar {
+  position: absolute;
+  /*needed for clipping*/
+  clip: rect(0, 5em, 5em, 2.5em);
+  background-color: rgb(65, 176, 245);
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+
+.progress-circle:not(.over50) .first50-bar {
+  display: none;
+}
+
+.progress-circle.p60 .value-bar {
+  transform: rotate(216deg);
+}
+
+.progress-circle.p75 .value-bar {
+  transform: rotate(270deg);
+}
+
+.progress-circle.p90 .value-bar {
+  transform: rotate(324deg);
+}
+
+.progress-circle.p85 .value-bar {
+  transform: rotate(306deg);
+}
+
+.progress-circle.p55 .value-bar {
+  transform: rotate(198deg);
+}
+
+/* skill Block End */
+
+/* Pricing Block Starts */
+#pricingBlock {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#pricingBlock>h1 {
+  font-size: 2em;
+  padding-bottom: 2px;
+  margin-bottom: 1%;
+  margin-top: 2%;
+  font-weight: bolder;
+  border-bottom: 2px solid rgb(65, 176, 245);
+}
+
+#pricingBlock>article {
+  height: 80vh;
+  width: 92%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#pricingBlock>article>.cardBlock {
+  height: 95%;
+  width: 30%;
+}
+
+#pricingBlock>article>.cardBlock>.price {
+  width: 100%;
+  height: 28%;
+  background-color: rgb(71, 73, 72);
+  color: white;
+  border-radius: 7px 7px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#pricingBlock>article>.cardBlock>p {
+  height: 9%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pricingBlock>article>.cardBlock>p:nth-child(odd) {
+  background-color: rgba(128, 128, 128, 0.135);
+}
+
+#pricingBlock>article>.cardBlock>.price>h1 {
+  font-size: 1.5em;
+}
+
+#pricingBlock>article>.cardBlock>.price>button {
+  font-size: 1.2em;
+  color: white;
+  background-color: rgb(65, 176, 245);
+  border: none;
+  border-radius: 20px;
+  padding: 2% 3%;
+}
+
+#pricingBlock>article>.cardBlock>button {
+  width: 100%;
+  height: 9%;
+  background-color: rgb(71, 73, 72);
+  border: none;
+  color: white;
+  font-size: 1.1em;
+  border-radius: 0 0 7px 7px;
+}
+
+#pricingBlock>article>.cardBlock:hover button {
+  background-color: rgb(65, 176, 245);
+}
+
+#pricingBlock>article>.cardBlock:hover .price {
+  background-color: rgb(161, 198, 221);
+}
+
+#pricingBlock>article>.cardBlock:hover .price>button {
+  background-color: rgb(71, 73, 72);
+}
+
+/* Pricing Block Ends */
+
+/* Contact Us block start */
+#contactBlock {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(243, 243, 243);
+}
+
+#contactBlock>h1 {
+  font-size: 2em;
+  width: 170px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid rgb(65, 176, 245);
+}
+
+#contactBlock>article {
+  height: 78%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contactBlock>article>.messageBlock {
+  height: 100%;
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  /* background-color: beige; */
+}
+
+.messageBlock>button {
+  background-color: rgb(65, 176, 245);
+  border: none;
+  width: 180px;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+}
+
+.messageBlock>button:hover {
+  background-color: rgb(62, 62, 62);
+  color: rgb(65, 176, 245) !important;
+}
+
+.messageBlock input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 11px;
+  border-radius: 2px;
+  border: 1px solid gray;
+  color: black;
+  margin-bottom: 1%;
+}
+
+#contactBlock>article>.infoBlock {
+  height: 100%;
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#contactBlock>article>.infoBlock>h1 {
+  font-size: 2em;
+}
+
+/* Contact Us block End */
+
+/* Map Block Start */
+#mapBlock {
+  height: 65vh;
+  width: 100%;
+}
+
+/* Footer Block Start */
+#footerBlock {
+  width: 100%;
+  height: 35vh;
+  background-color: rgb(62, 62, 62);
+  position: relative;
+}
+
+#footerBlock>.footerContent {
+  width: 85%;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+#footerBlock>.footerContent>.topBlock {
+  position: absolute;
+  width: inherit;
+  top: 12%;
+}
+
+#footerBlock>.footerContent>.topBlock>ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#footerBlock>.footerContent>.topBlock>ul>li>a {
+  text-decoration: none;
+  color: white;
+  font-size: 3.7vh;
+}
+
+#footerBlock>.footerContent>.topBlock>ul>li>a:hover {
+  color: rgb(55, 126, 249);
+  padding-bottom: 30px;
+  border-bottom: 3px solid;
+}
+
+#footerBlock>.footerContent>.topBlock>ul>li>a>i {
+  color: rgb(55, 126, 249);
+  padding: 13px 15px;
+  background-color: transparent;
+  border-radius: 70%;
+  font-size: 4.5vh !important;
+  border: 4px solid rgb(55, 126, 249);
+  margin-right: 15px;
+}
+
+#footerBlock>.footerContent>.bottomBlock {
+  color: rgb(224, 221, 221);
+  position: absolute;
+  bottom: 20%;
+}
